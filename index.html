@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Pong - Web Edition</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 2px solid #fff;
+            background: #000;
+        }
+        #gameContainer {
+            text-align: center;
+        }
+        #instructions {
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="instructions">
+            <p>Left Player: W/S Keys | Right Player: Arrow Keys</p>
+            <p>Click to start!</p>
+        </div>
+    </div>
+    <script src="pong.js"></script>
+</body>
+</html>
